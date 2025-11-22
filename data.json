@@ -4,38 +4,1532 @@
       "id": 1,
       "name": "Rick Grimes",
       "status": "alive",
-      "firstAppeared": 1,
-      "photo": "https://example.com/rick.jpg"
+      "firstAppeared": 1
     },
     {
       "id": 2,
       "name": "Daryl Dixon",
       "status": "alive",
-      "firstAppeared": 1,
-      "photo": "https://example.com/daryl.jpg"
+      "firstAppeared": 1
     },
     {
       "id": 3,
       "name": "Lori Grimes",
       "status": "deceased",
-      "firstAppeared": 1,
-      "photo": "https://example.com/lori.jpg"
+      "firstAppeared": 1
+    },
+    {
+      "id": 4,
+      "name": "Carl Grimes",
+      "status": "deceased",
+      "firstAppeared": 1
+    },
+    {
+      "id": 5,
+      "name": "Glenn Rhee",
+      "status": "deceased",
+      "firstAppeared": 1
+    },
+    {
+      "id": 6,
+      "name": "Shane Walsh",
+      "status": "deceased",
+      "firstAppeared": 1
+    },
+    {
+      "id": 7,
+      "name": "Andrea Harrison",
+      "status": "deceased",
+      "firstAppeared": 1
+    },
+    {
+      "id": 8,
+      "name": "Carol Peletier",
+      "status": "alive",
+      "firstAppeared": 1
+    },
+    {
+      "id": 9,
+      "name": "Maggie Greene",
+      "status": "alive",
+      "firstAppeared": 2
+    },
+    {
+      "id": 10,
+      "name": "Hershel Greene",
+      "status": "deceased",
+      "firstAppeared": 2
+    },
+    {
+      "id": 11,
+      "name": "Beth Greene",
+      "status": "deceased",
+      "firstAppeared": 2
+    },
+    {
+      "id": 12,
+      "name": "T-Dog",
+      "status": "deceased",
+      "firstAppeared": 2
+    },
+    {
+      "id": 13,
+      "name": "Merle Dixon",
+      "status": "deceased",
+      "firstAppeared": 1
+    },
+    {
+      "id": 14,
+      "name": "Michonne Grimes",
+      "status": "alive",
+      "firstAppeared": 2
+    },
+    {
+      "id": 15,
+      "name": "The Governor",
+      "status": "deceased",
+      "firstAppeared": 3
+    },
+    {
+      "id": 16,
+      "name": "Tyreese Williams",
+      "status": "deceased",
+      "firstAppeared": 3
+    },
+    {
+      "id": 17,
+      "name": "Sasha Williams",
+      "status": "deceased",
+      "firstAppeared": 3
+    },
+    {
+      "id": 18,
+      "name": "Abraham Ford",
+      "status": "deceased",
+      "firstAppeared": 4
+    },
+    {
+      "id": 19,
+      "name": "Eugene Porter",
+      "status": "alive",
+      "firstAppeared": 4
+    },
+    {
+      "id": 20,
+      "name": "Rosita Espinosa",
+      "status": "deceased",
+      "firstAppeared": 4
+    },
+    {
+      "id": 21,
+      "name": "Gabriel Stokes",
+      "status": "deceased",
+      "firstAppeared": 5
+    },
+    {
+      "id": 22,
+      "name": "Deanna Monroe",
+      "status": "deceased",
+      "firstAppeared": 5
+    },
+    {
+      "id": 23,
+      "name": "Aaron",
+      "status": "alive",
+      "firstAppeared": 5
+    },
+    {
+      "id": 24,
+      "name": "Negan Smith",
+      "status": "alive",
+      "firstAppeared": 6
+    },
+    {
+      "id": 25,
+      "name": "Enid",
+      "status": "deceased",
+      "firstAppeared": 6
+    },
+    {
+      "id": 26,
+      "name": "Jesus",
+      "status": "deceased",
+      "firstAppeared": 6
+    },
+    {
+      "id": 27,
+      "name": "Dwight",
+      "status": "alive",
+      "firstAppeared": 6
+    },
+    {
+      "id": 28,
+      "name": "Simon",
+      "status": "deceased",
+      "firstAppeared": 6
+    },
+    {
+      "id": 29,
+      "name": "Jadis",
+      "status": "alive",
+      "firstAppeared": 7
+    },
+    {
+      "id": 30,
+      "name": "Alpha",
+      "status": "deceased",
+      "firstAppeared": 9
+    },
+    {
+      "id": 31,
+      "name": "Beta",
+      "status": "deceased",
+      "firstAppeared": 9
+    },
+    {
+      "id": 32,
+      "name": "Lydia",
+      "status": "alive",
+      "firstAppeared": 9
+    },
+    {
+      "id": 33,
+      "name": "Yumiko",
+      "status": "alive",
+      "firstAppeared": 9
+    },
+    {
+      "id": 34,
+      "name": "Magna",
+      "status": "alive",
+      "firstAppeared": 9
+    },
+    {
+      "id": 35,
+      "name": "Connie",
+      "status": "alive",
+      "firstAppeared": 9
+    },
+    {
+      "id": 36,
+      "name": "Kelly",
+      "status": "alive",
+      "firstAppeared": 9
+    },
+    {
+      "id": 37,
+      "name": "Princess",
+      "status": "alive",
+      "firstAppeared": 10
+    },
+    {
+      "id": 38,
+      "name": "Leah",
+      "status": "alive",
+      "firstAppeared": 10
+    },
+    {
+      "id": 39,
+      "name": "Pope",
+      "status": "deceased",
+      "firstAppeared": 11
+    },
+    {
+      "id": 40,
+      "name": "Mercer",
+      "status": "alive",
+      "firstAppeared": 11
+    },
+    {
+      "id": 41,
+      "name": "Bob Stookey",
+      "status": "deceased",
+      "firstAppeared": 4
+    },
+    {
+      "id": 42,
+      "name": "Tara Chambler",
+      "status": "deceased",
+      "firstAppeared": 4
+    },
+    {
+      "id": 43,
+      "name": "Gareth",
+      "status": "deceased",
+      "firstAppeared": 4
+    },
+    {
+      "id": 44,
+      "name": "Noah",
+      "status": "deceased",
+      "firstAppeared": 5
+    },
+    {
+      "id": 45,
+      "name": "Jessie Anderson",
+      "status": "deceased",
+      "firstAppeared": 6
+    },
+    {
+      "id": 46,
+      "name": "Gregory",
+      "status": "deceased",
+      "firstAppeared": 6
+    },
+    {
+      "id": 47,
+      "name": "Siddiq",
+      "status": "deceased",
+      "firstAppeared": 8
+    },
+    {
+      "id": 48,
+      "name": "Ezekiel",
+      "status": "alive",
+      "firstAppeared": 7
     }
   ],
+
   "episodes": [
     {
       "id": 1,
       "season": 1,
       "number": 1,
       "title": "Days Gone Bye",
-      "summary": "Rick wakes up..."
+      "summary": "Rick acorda em um hospital e descobre que o mundo foi devastado por mortos-vivos."
     },
     {
       "id": 2,
       "season": 1,
       "number": 2,
       "title": "Guts",
-      "summary": "Rick meets..."
+      "summary": "Rick e Glenn elaboram um plano arriscado para escapar dos walkers em Atlanta."
+    },
+    {
+      "id": 3,
+      "season": 1,
+      "number": 3,
+      "title": "Tell It to the Frogs",
+      "summary": "Rick reencontra sua família e o grupo decide organizar o resgate de Merle."
+    },
+    {
+      "id": 4,
+      "season": 1,
+      "number": 4,
+      "title": "Vatos",
+      "summary": "Rick tenta negociar com um grupo misterioso de sobreviventes enquanto tensões aumentam."
+    },
+    {
+      "id": 5,
+      "season": 1,
+      "number": 5,
+      "title": "Wildfire",
+      "summary": "O grupo lida com perdas dolorosas e decide seguir rumo ao CDC em busca de respostas."
+    },
+    {
+      "id": 6,
+      "season": 1,
+      "number": 6,
+      "title": "TS-19",
+      "summary": "No CDC, os sobreviventes recebem revelações chocantes sobre o surto e precisam tomar decisões difíceis."
+    },
+    {
+      "id": 7,
+      "season": 2,
+      "number": 1,
+      "title": "What Lies Ahead",
+      "summary": "O grupo enfrenta bloqueios na estrada enquanto tenta encontrar Sophia após ela desaparecer na floresta."
+    },
+    {
+      "id": 8,
+      "season": 2,
+      "number": 2,
+      "title": "Bloodletting",
+      "summary": "Rick e Shane procuram ajuda para Carl, levando-os à fazenda dos Greene."
+    },
+    {
+      "id": 9,
+      "season": 2,
+      "number": 3,
+      "title": "Save the Last One",
+      "summary": "Shane luta para retornar à fazenda enquanto Rick e Lori enfrentam decisões difíceis sobre Carl."
+    },
+    {
+      "id": 10,
+      "season": 2,
+      "number": 4,
+      "title": "Cherokee Rose",
+      "summary": "O grupo tenta se adaptar à fazenda e continua a busca por Sophia."
+    },
+    {
+      "id": 11,
+      "season": 2,
+      "number": 5,
+      "title": "Chupacabra",
+      "summary": "Daryl sofre um acidente durante a busca por Sophia e precisa lutar pela própria sobrevivência."
+    },
+    {
+      "id": 12,
+      "season": 2,
+      "number": 6,
+      "title": "Secrets",
+      "summary": "Segredos sobre o celeiro são revelados enquanto Rick e Lori enfrentam tensões no relacionamento."
+    },
+    {
+      "id": 13,
+      "season": 2,
+      "number": 7,
+      "title": "Pretty Much Dead Already",
+      "summary": "O grupo descobre o conteúdo mortal do celeiro e precisa lidar com verdades duras."
+    },
+    {
+      "id": 14,
+      "season": 2,
+      "number": 8,
+      "title": "Nebraska",
+      "summary": "O grupo lida com as consequências do que aconteceu no celeiro enquanto Rick enfrenta novos perigos."
+    },
+    {
+      "id": 15,
+      "season": 2,
+      "number": 9,
+      "title": "Triggerfinger",
+      "summary": "Rick, Glenn e Hershel enfrentam sobreviventes hostis após um encontro tenso na cidade."
+    },
+    {
+      "id": 16,
+      "season": 2,
+      "number": 10,
+      "title": "18 Miles Out",
+      "summary": "Rick e Shane entram em conflito enquanto tentam decidir o futuro de Randall."
+    },
+    {
+      "id": 17,
+      "season": 2,
+      "number": 11,
+      "title": "Judge, Jury, Executioner",
+      "summary": "Daryl reflete sobre seu papel no grupo enquanto decisões difíceis precisam ser tomadas sobre Randall."
+    },
+    {
+      "id": 18,
+      "season": 2,
+      "number": 12,
+      "title": "Better Angels",
+      "summary": "O grupo enfrenta perdas profundas e percebe que a fazenda não é mais segura."
+    },
+    {
+      "id": 19,
+      "season": 2,
+      "number": 13,
+      "title": "Beside the Dying Fire",
+      "summary": "A fazenda é invadida, forçando o grupo a fugir e repensar o caminho adiante."
+    },
+    {
+      "id": 20,
+      "season": 3,
+      "number": 1,
+      "title": "Seed",
+      "summary": "O grupo encontra uma prisão aparentemente segura e começa a limpá-la para torná-la seu novo lar."
+    },
+    {
+      "id": 21,
+      "season": 3,
+      "number": 2,
+      "title": "Sick",
+      "summary": "Tensionam surgem quando os sobreviventes presos reivindicam seu espaço na prisão."
+    },
+    {
+      "id": 22,
+      "season": 3,
+      "number": 3,
+      "title": "Walk with Me",
+      "summary": "Michonne e Andrea descobrem Woodbury e conhecem o governador do local."
+    },
+    {
+      "id": 23,
+      "season": 3,
+      "number": 4,
+      "title": "Killer Within",
+      "summary": "A prisão é atacada, causando perdas devastadoras para o grupo."
+    },
+    {
+      "id": 24,
+      "season": 3,
+      "number": 5,
+      "title": "Say the Word",
+      "summary": "Rick tenta lidar com a dor enquanto Michonne desconfia das intenções do Governador."
+    },
+    {
+      "id": 25,
+      "season": 3,
+      "number": 6,
+      "title": "Hounded",
+      "summary": "Merle entra em perseguição a Michonne enquanto Rick recebe misteriosas ligações na prisão."
+    },
+    {
+      "id": 26,
+      "season": 3,
+      "number": 7,
+      "title": "When the Dead Come Knocking",
+      "summary": "Glenn e Maggie são capturados, obrigando o grupo a planejar um resgate ousado."
+    },
+    {
+      "id": 27,
+      "season": 3,
+      "number": 8,
+      "title": "Made to Suffer",
+      "summary": "O grupo invade Woodbury para resgatar Glenn e Maggie, culminando em confrontos intensos."
+    },
+    {
+      "id": 28,
+      "season": 3,
+      "number": 9,
+      "title": "The Suicide King",
+      "summary": "Daryl toma uma decisão difícil sobre seu irmão enquanto Woodbury enfrenta o caos."
+    },
+    {
+      "id": 29,
+      "season": 3,
+      "number": 10,
+      "title": "Home",
+      "summary": "Rick continua a perder o controle enquanto o Governador intensifica seus ataques."
+    },
+    {
+      "id": 30,
+      "season": 3,
+      "number": 11,
+      "title": "I Ain’t a Judas",
+      "summary": "Andrea busca negociar entre a prisão e Woodbury enquanto riscos aumentam."
+    },
+    {
+      "id": 31,
+      "season": 3,
+      "number": 12,
+      "title": "Clear",
+      "summary": "Rick, Michonne e Carl encontram um rosto familiar em uma cidade cheia de armadilhas."
+    },
+    {
+      "id": 32,
+      "season": 3,
+      "number": 13,
+      "title": "Arrow on the Doorpost",
+      "summary": "Rick e o Governador tentam negociar um acordo frágil enquanto seus grupos observam com cautela."
+    },
+    {
+      "id": 33,
+      "season": 3,
+      "number": 14,
+      "title": "Prey",
+      "summary": "Andrea tenta escapar de Woodbury após perceber os verdadeiros planos do Governador."
+    },
+    {
+      "id": 34,
+      "season": 3,
+      "number": 15,
+      "title": "This Sorrowful Life",
+      "summary": "Rick enfrenta um dilema moral enquanto Merle toma uma atitude impulsiva."
+    },
+    {
+      "id": 35,
+      "season": 3,
+      "number": 16,
+      "title": "Welcome to the Tombs",
+      "summary": "O Governador lança um ataque final contra a prisão, trazendo consequências devastadoras."
+    },
+    {
+      "id": 36,
+      "season": 4,
+      "number": 1,
+      "title": "30 Days Without an Accident",
+      "summary": "A prisão vive um período de relativa paz, mas uma nova ameaça mortal começa a se espalhar silenciosamente."
+    },
+    {
+      "id": 37,
+      "season": 4,
+      "number": 2,
+      "title": "Infected",
+      "summary": "Uma infecção letal se espalha entre os moradores da prisão, colocando todos em risco."
+    },
+    {
+      "id": 38,
+      "season": 4,
+      "number": 3,
+      "title": "Isolation",
+      "summary": "Enquanto parte do grupo busca medicamentos, a tensão cresce dentro da prisão devido ao surto."
+    },
+    {
+      "id": 39,
+      "season": 4,
+      "number": 4,
+      "title": "Indifference",
+      "summary": "Rick e Carol enfrentam decisões difíceis ao buscar suprimentos e lidar com as consequências do surto."
+    },
+    {
+      "id": 40,
+      "season": 4,
+      "number": 5,
+      "title": "Internment",
+      "summary": "Hershel luta para manter os doentes vivos enquanto walkers ameaçam a prisão por dentro e por fora."
+    },
+    {
+      "id": 41,
+      "season": 4,
+      "number": 6,
+      "title": "Live Bait",
+      "summary": "O Governador tenta recomeçar sua vida ao encontrar novas pessoas dispostas a confiar nele."
+    },
+    {
+      "id": 42,
+      "season": 4,
+      "number": 7,
+      "title": "Dead Weight",
+      "summary": "O Governador volta a revelar sua verdadeira natureza enquanto assume o controle de um novo grupo."
+    },
+    {
+      "id": 43,
+      "season": 4,
+      "number": 8,
+      "title": "Too Far Gone",
+      "summary": "O Governador declara guerra à prisão, resultando em uma batalha devastadora e na separação do grupo."
+    },
+    {
+      "id": 44,
+      "season": 4,
+      "number": 9,
+      "title": "After",
+      "summary": "Rick e Carl tentam sobreviver sozinhos após a queda da prisão, enfrentando seu momento mais frágil."
+    },
+    {
+      "id": 45,
+      "season": 4,
+      "number": 10,
+      "title": "Inmates",
+      "summary": "Os sobreviventes dispersos tentam reencontrar seus caminhos enquanto descobrem pistas sobre um novo refúgio."
+    },
+    {
+      "id": 46,
+      "season": 4,
+      "number": 11,
+      "title": "Claimed",
+      "summary": "Michonne e Carl fortalecem sua conexão enquanto Rick enfrenta intrusos perigosos."
+    },
+    {
+      "id": 47,
+      "season": 4,
+      "number": 12,
+      "title": "Still",
+      "summary": "Beth e Daryl lutam para sobreviver e acabam revelando seus medos, frustrações e esperanças."
+    },
+    {
+      "id": 48,
+      "season": 4,
+      "number": 13,
+      "title": "Alone",
+      "summary": "Sasha, Bob e Maggie buscam respostas diferentes sobre o futuro enquanto Daryl e Beth se aproximam."
+    },
+    {
+      "id": 49,
+      "season": 4,
+      "number": 14,
+      "title": "The Grove",
+      "summary": "Carol, Tyreese e as meninas encontram um aparente abrigo seguro, mas verdades sombrias vêm à tona."
+    },
+    {
+      "id": 50,
+      "season": 4,
+      "number": 15,
+      "title": "Us",
+      "summary": "Glenn continua determinado a encontrar Maggie, enquanto outros membros do grupo se aproximam de Terminus."
+    },
+    {
+      "id": 51,
+      "season": 4,
+      "number": 16,
+      "title": "A",
+      "summary": "Rick, Michonne e Carl enfrentam um grupo hostil, culminando em uma transformação brutal de Rick e na chegada a Terminus."
+    },
+    {
+      "id": 52,
+      "season": 5,
+      "number": 1,
+      "title": "No Sanctuary",
+      "summary": "Rick e o grupo lutam para escapar de Terminus, onde descobrem os horrores por trás do 'santuário'."
+    },
+    {
+      "id": 53,
+      "season": 5,
+      "number": 2,
+      "title": "Strangers",
+      "summary": "O grupo conhece o Padre Gabriel e descobre um novo abrigo, enquanto um perigo silencioso os observa."
+    },
+    {
+      "id": 54,
+      "season": 5,
+      "number": 3,
+      "title": "Four Walls and a Roof",
+      "summary": "Rick confronta Gareth e os canibais de Terminus, levando o grupo a uma vingança decisiva."
+    },
+    {
+      "id": 55,
+      "season": 5,
+      "number": 4,
+      "title": "Slabtown",
+      "summary": "Beth acorda em um misterioso hospital em Atlanta, onde precisa seguir regras rígidas para sobreviver."
+    },
+    {
+      "id": 56,
+      "season": 5,
+      "number": 5,
+      "title": "Self Help",
+      "summary": "O grupo de Abraham enfrenta desafios e revelações enquanto tenta levar Eugene até Washington."
+    },
+    {
+      "id": 57,
+      "season": 5,
+      "number": 6,
+      "title": "Consumed",
+      "summary": "Carol e Daryl seguem pistas sobre Beth e confrontam seus próprios passados enquanto procuram por ela."
+    },
+    {
+      "id": 58,
+      "season": 5,
+      "number": 7,
+      "title": "Crossed",
+      "summary": "O grupo planeja um resgate arriscado no hospital de Atlanta enquanto outras tensões crescem na equipe."
+    },
+    {
+      "id": 59,
+      "season": 5,
+      "number": 8,
+      "title": "Coda",
+      "summary": "Rick tenta negociar uma troca para salvar Beth, mas tudo termina em uma tragédia devastadora."
+    },
+    {
+      "id": 60,
+      "season": 5,
+      "number": 9,
+      "title": "What Happened and What's Going On",
+      "summary": "O grupo lida com a perda de Beth enquanto encontra novos desafios que culminam em uma grande tragédia."
+    },
+    {
+      "id": 61,
+      "season": 5,
+      "number": 10,
+      "title": "Them",
+      "summary": "Exaustos e famintos, Rick e o grupo enfrentam uma tempestade e questionam sua própria sobrevivência."
+    },
+    {
+      "id": 62,
+      "season": 5,
+      "number": 11,
+      "title": "The Distance",
+      "summary": "Um novo homem misterioso, Aaron, oferece abrigo ao grupo, mas Rick desconfia de suas intenções."
+    },
+    {
+      "id": 63,
+      "season": 5,
+      "number": 12,
+      "title": "Remember",
+      "summary": "O grupo chega à comunidade de Alexandria e tenta se adaptar à vida pacífica dentro dos muros."
+    },
+    {
+      "id": 64,
+      "season": 5,
+      "number": 13,
+      "title": "Forget",
+      "summary": "Daryl, Sasha e Carol têm dificuldades para se ajustar enquanto Rick considera medidas extremas."
+    },
+    {
+      "id": 65,
+      "season": 5,
+      "number": 14,
+      "title": "Spend",
+      "summary": "Missões perigosas expõem falhas na liderança de Alexandria e colocam vidas em risco."
+    },
+    {
+      "id": 66,
+      "season": 5,
+      "number": 15,
+      "title": "Try",
+      "summary": "A tensão entre Rick e os moradores de Alexandria atinge um ponto crítico, ameaçando a estabilidade da comunidade."
+    },
+    {
+      "id": 67,
+      "season": 5,
+      "number": 16,
+      "title": "Conquer",
+      "summary": "Rick encara as consequências de suas ações enquanto uma nova ameaça externa começa a se aproximar."
+    },
+    {
+      "id": 68,
+      "season": 6,
+      "number": 1,
+      "title": "First Time Again",
+      "summary": "Rick e o grupo tentam desviar uma imensa horda de walkers, mas um incidente em Alexandria ameaça o plano."
+    },
+    {
+      "id": 69,
+      "season": 6,
+      "number": 2,
+      "title": "JSS",
+      "summary": "Alexandria é atacada pelos Wolves, e Carol assume o controle para proteger a comunidade."
+    },
+    {
+      "id": 70,
+      "season": 6,
+      "number": 3,
+      "title": "Thank You",
+      "summary": "Glenn e Nicholas enfrentam uma situação desesperadora enquanto o grupo se dispersa para conter a horda."
+    },
+    {
+      "id": 71,
+      "season": 6,
+      "number": 4,
+      "title": "Here's Not Here",
+      "summary": "Morgan relembra seu passado e a filosofia de não matar que aprendeu com Eastman."
+    },
+    {
+      "id": 72,
+      "season": 6,
+      "number": 5,
+      "title": "Now",
+      "summary": "Alexandria tenta se reorganizar após os ataques, enquanto a horda se aproxima perigosamente dos muros."
+    },
+    {
+      "id": 73,
+      "season": 6,
+      "number": 6,
+      "title": "Always Accountable",
+      "summary": "Daryl, Sasha e Abraham enfrentam novos inimigos misteriosos enquanto estão separados do grupo."
+    },
+    {
+      "id": 74,
+      "season": 6,
+      "number": 7,
+      "title": "Heads Up",
+      "summary": "Glenn encontra ajuda inesperada e Rick tenta alertar Alexandria sobre uma nova ameaça."
+    },
+    {
+      "id": 75,
+      "season": 6,
+      "number": 8,
+      "title": "Start to Finish",
+      "summary": "Os muros de Alexandria cedem e a comunidade é invadida pela horda, colocando todos em extremo perigo."
+    },
+    {
+      "id": 76,
+      "season": 6,
+      "number": 9,
+      "title": "No Way Out",
+      "summary": "Alexandria se une para lutar pela sobrevivência em uma batalha brutal contra a horda de walkers."
+    },
+    {
+      "id": 77,
+      "season": 6,
+      "number": 10,
+      "title": "The Next World",
+      "summary": "Rick e Daryl encontram Jesus durante uma busca por suprimentos, e uma nova comunidade é revelada."
+    },
+    {
+      "id": 78,
+      "season": 6,
+      "number": 11,
+      "title": "Knots Untie",
+      "summary": "Jesus leva Rick e o grupo até Hilltop, dando início a uma aliança frágil contra os Saviors."
+    },
+    {
+      "id": 79,
+      "season": 6,
+      "number": 12,
+      "title": "Not Tomorrow Yet",
+      "summary": "Rick lidera um ataque preventivo contra os Saviors, desencadeando consequências devastadoras."
+    },
+    {
+      "id": 80,
+      "season": 6,
+      "number": 13,
+      "title": "The Same Boat",
+      "summary": "Carol e Maggie são capturadas por um grupo aliado aos Saviors e precisam lutar para sobreviver."
+    },
+    {
+      "id": 81,
+      "season": 6,
+      "number": 14,
+      "title": "Twice as Far",
+      "summary": "Uma busca aparentemente simples por suprimentos se transforma em tragédia para o grupo."
+    },
+    {
+      "id": 82,
+      "season": 6,
+      "number": 15,
+      "title": "East",
+      "summary": "Daryl sai em busca de vingança, colocando-se em grande perigo e atraindo o grupo para uma armadilha."
+    },
+    {
+      "id": 83,
+      "season": 6,
+      "number": 16,
+      "title": "Last Day on Earth",
+      "summary": "O grupo cai nas mãos de Negan e dos Saviors, culminando em um momento chocante e brutal."
+    },
+    {
+      "id": 84,
+      "season": 7,
+      "number": 1,
+      "title": "The Day Will Come When You Won't Be",
+      "summary": "Rick e o grupo enfrentam o horror das consequências de desafiar Negan, que faz uma demonstração brutal de poder."
+    },
+    {
+      "id": 85,
+      "season": 7,
+      "number": 2,
+      "title": "The Well",
+      "summary": "Carol e Morgan conhecem o Reino e seu líder peculiar, Ezekiel, descobrindo uma nova comunidade."
+    },
+    {
+      "id": 86,
+      "season": 7,
+      "number": 3,
+      "title": "The Cell",
+      "summary": "Daryl é mantido prisioneiro pelos Saviors, enfrentando manipulação psicológica intensa."
+    },
+    {
+      "id": 87,
+      "season": 7,
+      "number": 4,
+      "title": "Service",
+      "summary": "Negan visita Alexandria e demonstra controle absoluto sobre Rick e sua comunidade."
+    },
+    {
+      "id": 88,
+      "season": 7,
+      "number": 5,
+      "title": "Go Getters",
+      "summary": "Maggie e Sasha buscam abrigo em Hilltop enquanto Gregory tenta impedir sua influência crescente."
+    },
+    {
+      "id": 89,
+      "season": 7,
+      "number": 6,
+      "title": "Swear",
+      "summary": "Tara descobre a comunidade Oceanside, composta inteiramente por mulheres traumatizadas pelo domínio dos Saviors."
+    },
+    {
+      "id": 90,
+      "season": 7,
+      "number": 7,
+      "title": "Sing Me a Song",
+      "summary": "Carl invade o Santuário com um plano arriscado e acaba enfrentando Negan diretamente."
+    },
+    {
+      "id": 91,
+      "season": 7,
+      "number": 8,
+      "title": "Hearts Still Beating",
+      "summary": "Vários grupos enfrentam perdas enquanto Rick decide que é hora de lutar contra Negan."
+    },
+    {
+      "id": 92,
+      "season": 7,
+      "number": 9,
+      "title": "Rock in the Road",
+      "summary": "Rick tenta unir Alexandria, Hilltop e o Reino contra os Saviors, mas encontra resistência."
+    },
+    {
+      "id": 93,
+      "season": 7,
+      "number": 10,
+      "title": "New Best Friends",
+      "summary": "Rick faz uma aliança improvável com os Scavengers e reencontra Carol por meio de Daryl."
+    },
+    {
+      "id": 94,
+      "season": 7,
+      "number": 11,
+      "title": "Hostiles and Calamities",
+      "summary": "Eugene se adapta ao Santuário enquanto Dwight lida com uma crise pessoal e lealdades conflitantes."
+    },
+    {
+      "id": 95,
+      "season": 7,
+      "number": 12,
+      "title": "Say Yes",
+      "summary": "Rick e Michonne buscam suprimentos e reforçam sua união enquanto se preparam para a guerra."
+    },
+    {
+      "id": 96,
+      "season": 7,
+      "number": 13,
+      "title": "Bury Me Here",
+      "summary": "Um conflito no Reino leva a consequências trágicas e à transformação de Morgan."
+    },
+    {
+      "id": 97,
+      "season": 7,
+      "number": 14,
+      "title": "The Other Side",
+      "summary": "Sasha e Rosita iniciam uma missão arriscada para assassinar Negan."
+    },
+    {
+      "id": 98,
+      "season": 7,
+      "number": 15,
+      "title": "Something They Need",
+      "summary": "Rick negocia com Oceanside para conseguir armas, enquanto Eugene toma uma decisão controversa."
+    },
+    {
+      "id": 99,
+      "season": 7,
+      "number": 16,
+      "title": "The First Day of the Rest of Your Life",
+      "summary": "Alexandria se prepara para o confronto contra os Saviors, resultando em uma batalha decisiva e em novas alianças."
+    },
+    {
+      "id": 100,
+      "season": 8,
+      "number": 1,
+      "title": "Mercy",
+      "summary": "Rick e as comunidades se unem para iniciar o ataque contra o Santuário e declarar guerra a Negan."
+    },
+    {
+      "id": 101,
+      "season": 8,
+      "number": 2,
+      "title": "The Damned",
+      "summary": "As equipes realizam operações simultâneas, enquanto antigos inimigos reaparecem em meio à guerra."
+    },
+    {
+      "id": 102,
+      "season": 8,
+      "number": 3,
+      "title": "Monsters",
+      "summary": "A batalha continua e conflitos morais surgem sobre o destino dos prisioneiros dos Saviors."
+    },
+    {
+      "id": 103,
+      "season": 8,
+      "number": 4,
+      "title": "Some Guy",
+      "summary": "Ezekiel enfrenta as consequências devastadoras de uma batalha que acaba com seu otimismo."
+    },
+    {
+      "id": 104,
+      "season": 8,
+      "number": 5,
+      "title": "The Big Scary U",
+      "summary": "Negan e Gabriel ficam presos juntos, revelando perspectivas inesperadas sobre liderança e fé."
+    },
+    {
+      "id": 105,
+      "season": 8,
+      "number": 6,
+      "title": "The King, the Widow, and Rick",
+      "summary": "Rick tenta forjar novas alianças enquanto Hilltop, Reino e Alexandria adotam estratégias diferentes."
+    },
+    {
+      "id": 106,
+      "season": 8,
+      "number": 7,
+      "title": "Time for After",
+      "summary": "Eugene enfrenta escolhas difíceis no Santuário, enquanto Rick toma decisões arriscadas para vencer a guerra."
+    },
+    {
+      "id": 107,
+      "season": 8,
+      "number": 8,
+      "title": "How It's Gotta Be",
+      "summary": "Os Saviors contra-atacam de maneira brutal, deixando Alexandria em ruínas e chocando o grupo."
+    },
+    {
+      "id": 108,
+      "season": 8,
+      "number": 9,
+      "title": "Honor",
+      "summary": "O grupo enfrenta um dos momentos mais dolorosos após a revelação da mordida de Carl."
+    },
+    {
+      "id": 109,
+      "season": 8,
+      "number": 10,
+      "title": "The Lost and the Plunderers",
+      "summary": "Rick e Michonne procuram ajuda, enquanto diversas comunidades sofrem as consequências da guerra."
+    },
+    {
+      "id": 110,
+      "season": 8,
+      "number": 11,
+      "title": "Dead or Alive Or",
+      "summary": "Os sobreviventes tentam chegar a Hilltop enquanto os Saviors soltam uma nova arma biológica."
+    },
+    {
+      "id": 111,
+      "season": 8,
+      "number": 12,
+      "title": "The Key",
+      "summary": "Uma nova comunidade misteriosa, liderada por Georgie, oferece ajuda em troca de cooperação."
+    },
+    {
+      "id": 112,
+      "season": 8,
+      "number": 13,
+      "title": "Do Not Send Us Astray",
+      "summary": "Hilltop enfrenta um ataque dos Saviors que resulta em novas perdas e uma ameaça interna."
+    },
+    {
+      "id": 113,
+      "season": 8,
+      "number": 14,
+      "title": "Still Gotta Mean Something",
+      "summary": "Rick enfrenta decisões sombrias enquanto Morgan luta contra sua deterioração emocional."
+    },
+    {
+      "id": 114,
+      "season": 8,
+      "number": 15,
+      "title": "Worth",
+      "summary": "Negan retorna ao Santuário e confronta traições internas enquanto Rick tenta encerrar a guerra."
+    },
+    {
+      "id": 115,
+      "season": 8,
+      "number": 16,
+      "title": "Wrath",
+      "summary": "A guerra entre Rick e Negan chega ao fim com um confronto decisivo e uma escolha que muda tudo."
+    },
+    {
+      "id": 116,
+      "season": 9,
+      "number": 1,
+      "title": "A New Beginning",
+      "summary": "Após a guerra, as comunidades tentam reconstruir a civilização enquanto novos conflitos surgem."
+    },
+    {
+      "id": 117,
+      "season": 9,
+      "number": 2,
+      "title": "The Bridge",
+      "summary": "Rick lidera esforços para reconstruir uma ponte, mas tensões entre Saviors e as comunidades aumentam."
+    },
+    {
+      "id": 118,
+      "season": 9,
+      "number": 3,
+      "title": "Warning Signs",
+      "summary": "Desaparecimentos misteriosos revelam sabotagens internas e ameaçam a frágil paz entre os grupos."
+    },
+    {
+      "id": 119,
+      "season": 9,
+      "number": 4,
+      "title": "The Obliged",
+      "summary": "Conflitos entre Rick e Daryl levam a um acidente enquanto uma ameaça crescente se aproxima."
+    },
+    {
+      "id": 120,
+      "season": 9,
+      "number": 5,
+      "title": "What Comes After",
+      "summary": "Rick enfrenta seu destino em um episódio marcante que muda para sempre o futuro da série."
+    },
+    {
+      "id": 121,
+      "season": 9,
+      "number": 6,
+      "title": "Who Are You Now?",
+      "summary": "Após um salto temporal, um novo grupo de sobreviventes chega, e Judith assume um papel importante."
+    },
+    {
+      "id": 122,
+      "season": 9,
+      "number": 7,
+      "title": "Stradivarius",
+      "summary": "Daryl, Carol e Henry tentam entender a nova ameaça enquanto procuram respostas sobre o passado."
+    },
+    {
+      "id": 123,
+      "season": 9,
+      "number": 8,
+      "title": "Evolution",
+      "summary": "O grupo descobre os Sussurradores, inimigos que se escondem entre os mortos, chocando a todos."
+    },
+    {
+      "id": 124,
+      "season": 9,
+      "number": 9,
+      "title": "Adaptation",
+      "summary": "A descoberta dos Sussurradores cria divisões dentro das comunidades e abre caminho para novos perigos."
+    },
+    {
+      "id": 125,
+      "season": 9,
+      "number": 10,
+      "title": "Omega",
+      "summary": "O passado de Alpha é revelado enquanto Lydia relata os horrores do grupo dos Sussurradores."
+    },
+    {
+      "id": 126,
+      "season": 9,
+      "number": 11,
+      "title": "Bounty",
+      "summary": "O Reino e Hilltop enfrentam Alpha em uma negociação tensa que revela até onde ela vai pelo poder."
+    },
+    {
+      "id": 127,
+      "season": 9,
+      "number": 12,
+      "title": "Guardians",
+      "summary": "Daryl tenta proteger Lydia enquanto Alpha demonstra a brutalidade extrema dos Sussurradores."
+    },
+    {
+      "id": 128,
+      "season": 9,
+      "number": 13,
+      "title": "Chokepoint",
+      "summary": "Daryl e Connie enfrentam Beta em um confronto intenso enquanto tentam escapar com Lydia."
+    },
+    {
+      "id": 129,
+      "season": 9,
+      "number": 14,
+      "title": "Scars",
+      "summary": "O passado traumático de Michonne é revelado e explica sua postura protetora contra estranhos."
+    },
+    {
+      "id": 130,
+      "season": 9,
+      "number": 15,
+      "title": "The Calm Before",
+      "summary": "Uma cruel emboscada de Alpha resulta em uma das perdas mais chocantes da série."
+    },
+    {
+      "id": 131,
+      "season": 9,
+      "number": 16,
+      "title": "The Storm",
+      "summary": "Uma nevasca mortal coloca as comunidades em risco enquanto cada grupo tenta sobreviver ao inverno."
+    },
+
+    {
+      "id": 132,
+      "season": 10,
+      "number": 1,
+      "title": "Lines We Cross",
+      "summary": "Os sobreviventes treinam para um possível retorno dos Sussurradores enquanto novas tensões surgem."
+    },
+    {
+      "id": 133,
+      "season": 10,
+      "number": 2,
+      "title": "We Are the End of the World",
+      "summary": "A origem de Alpha e Beta é revelada enquanto o grupo dos Sussurradores se fortalece."
+    },
+    {
+      "id": 134,
+      "season": 10,
+      "number": 3,
+      "title": "Ghosts",
+      "summary": "Alexandria enfrenta ataques constantes de walkers, e Carol começa a perder o controle emocional."
+    },
+    {
+      "id": 135,
+      "season": 10,
+      "number": 4,
+      "title": "Silence the Whisperers",
+      "summary": "Lydia é hostilizada e Negan intervém, gerando conflitos dentro de Alexandria."
+    },
+    {
+      "id": 136,
+      "season": 10,
+      "number": 5,
+      "title": "What It Always Is",
+      "summary": "Negan tenta ajudar uma nova pessoa enquanto o Hilltop lida com falta de suprimentos."
+    },
+    {
+      "id": 137,
+      "season": 10,
+      "number": 6,
+      "title": "Bonds",
+      "summary": "Carol e Daryl investigam os Sussurradores enquanto Eugene cria um contato misterioso pelo rádio."
+    },
+    {
+      "id": 138,
+      "season": 10,
+      "number": 7,
+      "title": "Open Your Eyes",
+      "summary": "Carol ultrapassa limites em busca de respostas e uma traição interna é revelada."
+    },
+    {
+      "id": 139,
+      "season": 10,
+      "number": 8,
+      "title": "The World Before",
+      "summary": "O grupo faz uma descoberta importante e parte para uma missão arriscada."
+    },
+    {
+      "id": 140,
+      "season": 10,
+      "number": 9,
+      "title": "Squeeze",
+      "summary": "O grupo fica preso em uma mina e luta para escapar enquanto Negan se aproxima de Alpha."
+    },
+    {
+      "id": 141,
+      "season": 10,
+      "number": 10,
+      "title": "Stalker",
+      "summary": "Beta invade Alexandria enquanto Daryl enfrenta Alpha em um confronto brutal."
+    },
+    {
+      "id": 142,
+      "season": 10,
+      "number": 11,
+      "title": "Morning Star",
+      "summary": "As comunidades se preparam para a guerra enquanto a horda dos Sussurradores se aproxima."
+    },
+    {
+      "id": 143,
+      "season": 10,
+      "number": 12,
+      "title": "Walk with Us",
+      "summary": "Após a batalha no Hilltop, Negan toma uma decisão que muda o rumo da guerra."
+    },
+    {
+      "id": 144,
+      "season": 10,
+      "number": 13,
+      "title": "What We Become",
+      "summary": "Michonne acompanha Virgil e acaba enfrentando uma jornada psicológica que muda seu destino."
+    },
+    {
+      "id": 145,
+      "season": 10,
+      "number": 14,
+      "title": "Look at the Flowers",
+      "summary": "Daryl e os outros lidam com as consequências do fim de Alpha enquanto um novo caminho surge."
+    },
+    {
+      "id": 146,
+      "season": 10,
+      "number": 15,
+      "title": "The Tower",
+      "summary": "Os Sussurradores encurralam os sobreviventes e Eugene encontra a excêntrica Princesa."
+    },
+    {
+      "id": 147,
+      "season": 10,
+      "number": 16,
+      "title": "A Certain Doom",
+      "summary": "As comunidades se unem na batalha final contra Beta e sua horda."
+    },
+    {
+      "id": 148,
+      "season": 10,
+      "number": 17,
+      "title": "Home Sweet Home",
+      "summary": "Maggie retorna e precisa enfrentar velhas ameaças enquanto lida com Negan."
+    },
+    {
+      "id": 149,
+      "season": 10,
+      "number": 18,
+      "title": "Find Me",
+      "summary": "Flashbacks revelam o passado de Daryl enquanto ele e Carol enfrentam tensões recentes."
+    },
+    {
+      "id": 150,
+      "season": 10,
+      "number": 19,
+      "title": "One More",
+      "summary": "Gabriel e Aaron buscam suprimentos e encontram um sobrevivente enigmático."
+    },
+    {
+      "id": 151,
+      "season": 10,
+      "number": 20,
+      "title": "Splinter",
+      "summary": "Princesa é separada do grupo e enfrenta seus traumas enquanto tenta escapar."
+    },
+    {
+      "id": 152,
+      "season": 10,
+      "number": 21,
+      "title": "Diverged",
+      "summary": "Daryl e Carol seguem caminhos separados enquanto tentam lidar com seus conflitos internos."
+    },
+    {
+      "id": 153,
+      "season": 10,
+      "number": 22,
+      "title": "Here's Negan",
+      "summary": "Negan relembra seu passado com Lucille e enfrenta o que precisa fazer para seguir em frente."
+    },
+    {
+      "id": 154,
+      "season": 11,
+      "number": 1,
+      "title": "Acheron: Part I",
+      "summary": "Daryl lidera uma missão urgente para resgatar suprimentos, enquanto Maggie e Negan enfrentam tensões sob uma tempestade e o grupo do Commonwealth passa por um interrogatório."
+    },
+    {
+      "id": 155,
+      "season": 11,
+      "number": 2,
+      "title": "Acheron: Part II",
+      "summary": "Presos em um túnel de metrô, os sobreviventes lutam para sair com poucas armas, enquanto Eugene questiona o custo real de sua entrada no Commonwealth."
+    },
+    {
+      "id": 156,
+      "season": 11,
+      "number": 3,
+      "title": "Hunted",
+      "summary": "Maggie e seu grupo são perseguidos pelos Ceifadores; em Alexandria, outros buscam suprimentos e Judith tenta lidar com a ausência dos pais."
+    },
+    {
+      "id": 157,
+      "season": 11,
+      "number": 4,
+      "title": "Rendition",
+      "summary": "Daryl é capturado pelos Ceifadores e confronta Leah, enquanto enfrenta tortura física e psicológica."
+    },
+    {
+      "id": 158,
+      "season": 11,
+      "number": 5,
+      "title": "Out of the Ashes",
+      "summary": "Aaron, Carol e Lydia vasculham os escombros da Colônia Hilltop por suprimentos; no Commonwealth, Eugene e outros iniciam sua integração."
+    },
+    {
+      "id": 159,
+      "season": 11,
+      "number": 6,
+      "title": "On the Inside",
+      "summary": "Connie e Virgil descobrem um grupo canibal; no Commonwealth, Daryl e Maggie tramam um ataque usando walkers mascarados."
+    },
+    {
+      "id": 160,
+      "season": 11,
+      "number": 7,
+      "title": "Promises Broken",
+      "summary": "Daryl, Carol e outros lidam com promessas antigas e novos acordos, enquanto o grupo planeja ações ousadas para proteger seu futuro."
+    },
+    {
+      "id": 161,
+      "season": 11,
+      "number": 8,
+      "title": "For Blood",
+      "summary": "As tensões chegam ao ápice entre os sobreviventes, culminando em violência e escolhas difíceis entre lealdade e sobrevivência."
+    },
+    {
+      "id": 162,
+      "season": 11,
+      "number": 9,
+      "title": "No Other Way",
+      "summary": "Com opções limitadas, os personagens fazem sacrifícios para manter seus ideais enquanto enfrentam consequências difíceis."
+    },
+    {
+      "id": 163,
+      "season": 11,
+      "number": 10,
+      "title": "New Haunts",
+      "summary": "O passado do Commonwealth é revelado; Eugene questiona seu papel e o grupo deve decidir se pode confiar no local."
+    },
+    {
+      "id": 164,
+      "season": 11,
+      "number": 11,
+      "title": "Rogue Element",
+      "summary": "Eugene busca por Stephanie, Connie investiga segredos internos e Carol é envolvida em disputas de poder no Commonwealth."
+    },
+    {
+      "id": 165,
+      "season": 11,
+      "number": 12,
+      "title": "The Lucky Ones",
+      "summary": "Aaron e Maggie têm uma audiência com a governadora Pamela Milton, enquanto enfrentam dilemas morais em nome de suas comunidades."
+    },
+    {
+      "id": 166,
+      "season": 11,
+      "number": 13,
+      "title": "Warlords",
+      "summary": "A tensão entre comunidades aumenta enquanto líderes emergem e alianças mudam de forma inesperada."
+    },
+    {
+      "id": 167,
+      "season": 11,
+      "number": 14,
+      "title": "The Rotten Core",
+      "summary": "Dentro do Commonwealth, a podridão de suas estruturas de poder começa a se mostrar; fora, os sobreviventes enfrentam dilemas éticos."
+    },
+    {
+      "id": 168,
+      "season": 11,
+      "number": 15,
+      "title": "Trust",
+      "summary": "A confiança é testada entre os sobreviventes quando planos de insurreição e redenção se cruzam."
+    },
+    {
+      "id": 169,
+      "season": 11,
+      "number": 16,
+      "title": "Acts of God",
+      "summary": "Eventos drásticos obrigam os personagens a tomar atitudes extremas e assumir riscos em nome do que acreditam."
+    },
+    {
+      "id": 170,
+      "season": 11,
+      "number": 17,
+      "title": "Lockdown",
+      "summary": "O Commonwealth é colocado em quarentena; antigos prisioneiros se veem de volta sob vigilância total."
+    },
+    {
+      "id": 171,
+      "season": 11,
+      "number": 18,
+      "title": "A New Deal",
+      "summary": "Negociações perigosas entre comunidades ameaçam explodir em conflito enquanto novas promessas são feitas."
+    },
+    {
+      "id": 172,
+      "season": 11,
+      "number": 19,
+      "title": "Variant",
+      "summary": "Uma nova ameaça aparece, forçando o grupo a lidar com algo jamais visto antes no apocalipse zumbi."
+    },
+    {
+      "id": 173,
+      "season": 11,
+      "number": 20,
+      "title": "What's Been Lost",
+      "summary": "O passado e o presente colidem quando os sobreviventes descobrem o que realmente perderam ao longo da guerra."
+    },
+    {
+      "id": 174,
+      "season": 11,
+      "number": 21,
+      "title": "Outpost 22",
+      "summary": "Os personagens retornam a um posto estratégico para consolidar alianças e preparar o terreno para o confronto final."
+    },
+    {
+      "id": 175,
+      "season": 11,
+      "number": 22,
+      "title": "Faith",
+      "summary": "A fé dos sobreviventes é testada com eventos que surgem do inesperado, e antigos erros voltam à tona."
+    },
+    {
+      "id": 176,
+      "season": 11,
+      "number": 23,
+      "title": "Family",
+      "summary": "Laços de família são reforçados e quebrados enquanto todos se preparam para o que pode ser o fim de sua jornada."
+    },
+    {
+      "id": 177,
+      "season": 11,
+      "number": 24,
+      "title": "Rest in Peace",
+      "summary": "A saga final termina com confronto decisivo e reflexões sobre o legado de cada sobrevivente."
     }
   ]
 }
