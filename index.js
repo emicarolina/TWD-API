@@ -12,6 +12,10 @@ app.use("/public", express.static(path.join(process.cwd(), "public")));
 
 app.get("/health", (req, res) => res.json({ status: "ok" }));
 
+app.get("/ping", (req, res) => {
+  res.json({ message: "API is awake!" });
+});
+
 app.use("/characters", charactersRoutes);
 app.use("/episodes", episodesRoutes);
 
