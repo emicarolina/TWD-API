@@ -15,22 +15,43 @@ function writeData(data) {
 }
 
 router.get("/", (req, res) => {
-  const { name, status } = req.query;
+  const { name, status, page = "1", limit = "12" } = req.query;
   const { characters } = readData();
+
+  const pageNum = Math.max(1, Number.parseInt(page, 10) || 1);
+  const limitNum = Math.max(1, Math.min(100, Number.parseInt(limit, 10) || 12)); // cap max 100
 
   let result = characters;
 
-  if (name)
+  if (name) {
     result = result.filter((c) =>
-      c.name.toLowerCase().includes(name.toLowerCase())
+      c.name.toLowerCase().includes(String(name).toLowerCase())
     );
+  }
 
-  if (status)
+  if (status) {
     result = result.filter(
-      (c) => c.status.toLowerCase() === status.toLowerCase()
+      (c) => c.status && c.status.toLowerCase() === String(status).toLowerCase()
     );
+  }
 
-  res.json(result);
+  const totalItems = result.length;
+  const totalPages = Math.max(1, Math.ceil(totalItems / limitNum));
+
+  const currentPage = Math.min(pageNum, totalPages);
+
+  const start = (currentPage - 1) * limitNum;
+  const end = start + limitNum;
+
+  const pageItems = result.slice(start, end);
+
+  res.json({
+    page: currentPage,
+    totalPages,
+    totalItems,
+    limit: limitNum,
+    characters: pageItems,
+  });
 });
 
 router.get("/:id", (req, res) => {
