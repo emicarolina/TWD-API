@@ -54,6 +54,27 @@ app.get("/api/ping", (req, res) => {
 app.use("/api/characters", charactersRoutes);
 app.use("/api/episodes", episodesRoutes);
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "🧟 Welcome to The Walking Dead API",
+    version: "1.0.0",
+    endpoints: {
+      characters: "/api/characters",
+      character_by_id: "/api/characters/:id",
+      episodes: "/api/episodes",
+      episode_by_id: "/api/episodes/:id",
+      health: "/api/health",
+    },
+    documentation: "https://github.com/emicarolina/api-twd",
+    examples: {
+      all_characters: "/api/characters?page=1&limit=12",
+      search_by_name: "/api/characters?name=Rick",
+      filter_by_status: "/api/characters?status=alive",
+      episodes_by_season: "/api/episodes?season=1",
+    },
+  });
+});
+
 app.use((req, res) => {
   res.status(404).json({ error: "Endpoint not found" });
 });
