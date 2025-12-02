@@ -5,343 +5,343 @@
       "name": "Rick Grimes",
       "status": "alive",
       "firstAppeared": 1,
-      "image": "/public/images/rick.webp"
+      "image": "/images/rick.webp"
     },
     {
       "id": 2,
       "name": "Daryl Dixon",
       "status": "alive",
       "firstAppeared": 1,
-      "image": "/public/images/daryl.webp"
+      "image": "/images/daryl.webp"
     },
     {
       "id": 3,
       "name": "Lori Grimes",
       "status": "deceased",
       "firstAppeared": 1,
-      "image": "/public/images/lori.webp"
+      "image": "/images/lori.webp"
     },
     {
       "id": 4,
       "name": "Carl Grimes",
       "status": "deceased",
       "firstAppeared": 1,
-      "image": "/public/images/carl.webp"
+      "image": "/images/carl.webp"
     },
     {
       "id": 5,
       "name": "Glenn Rhee",
       "status": "deceased",
       "firstAppeared": 1,
-      "image": "/public/images/glenn.webp"
+      "image": "/images/glenn.webp"
     },
     {
       "id": 6,
       "name": "Shane Walsh",
       "status": "deceased",
       "firstAppeared": 1,
-      "image": "/public/images/shane.webp"
+      "image": "/images/shane.webp"
     },
     {
       "id": 7,
       "name": "Andrea Harrison",
       "status": "deceased",
       "firstAppeared": 1,
-      "image": "/public/images/andrea.webp"
+      "image": "/images/andrea.webp"
     },
     {
       "id": 8,
       "name": "Carol Peletier",
       "status": "alive",
       "firstAppeared": 1,
-      "image": "/public/images/carol.webp"
+      "image": "/images/carol.webp"
     },
     {
       "id": 9,
       "name": "Merle Dixon",
       "status": "deceased",
       "firstAppeared": 1,
-      "image": "/public/images/merle.webp"
+      "image": "/images/merle.webp"
     },
     {
       "id": 10,
       "name": "Morgan Jones",
       "status": "alive",
       "firstAppeared": 1,
-      "image": "/public/images/morgan.webp"
+      "image": "/images/morgan.webp"
     },
     {
       "id": 11,
       "name": "Maggie Greene",
       "status": "alive",
       "firstAppeared": 2,
-      "image": "/public/images/maggie.webp"
+      "image": "/images/maggie.webp"
     },
     {
       "id": 12,
       "name": "Hershel Greene",
       "status": "deceased",
       "firstAppeared": 2,
-      "image": "/public/images/hershel.webp"
+      "image": "/images/hershel.webp"
     },
     {
       "id": 13,
       "name": "Beth Greene",
       "status": "deceased",
       "firstAppeared": 2,
-      "image": "/public/images/beth.webp"
+      "image": "/images/beth.webp"
     },
     {
       "id": 14,
       "name": "T-Dog",
       "status": "deceased",
       "firstAppeared": 2,
-      "image": "/public/images/tdog.webp"
+      "image": "/images/tdog.webp"
     },
     {
       "id": 15,
       "name": "Michonne Grimes",
       "status": "alive",
       "firstAppeared": 2,
-      "image": "/public/images/michonne.webp"
+      "image": "/images/michonne.webp"
     },
     {
       "id": 16,
       "name": "The Governor",
       "status": "deceased",
       "firstAppeared": 3,
-      "image": "/public/images/governor.webp"
+      "image": "/images/governor.webp"
     },
     {
       "id": 17,
       "name": "Tyreese Williams",
       "status": "deceased",
       "firstAppeared": 3,
-      "image": "/public/images/tyreese.webp"
+      "image": "/images/tyreese.webp"
     },
     {
       "id": 18,
       "name": "Sasha Williams",
       "status": "deceased",
       "firstAppeared": 3,
-      "image": "/public/images/sasha.webp"
+      "image": "/images/sasha.webp"
     },
     {
       "id": 19,
       "name": "Abraham Ford",
       "status": "deceased",
       "firstAppeared": 4,
-      "image": "/public/images/abraham.webp"
+      "image": "/images/abraham.webp"
     },
     {
       "id": 20,
       "name": "Eugene Porter",
       "status": "alive",
       "firstAppeared": 4,
-      "image": "/public/images/eugene.webp"
+      "image": "/images/eugene.webp"
     },
     {
       "id": 21,
       "name": "Rosita Espinosa",
       "status": "deceased",
       "firstAppeared": 4,
-      "image": "/public/images/rosita.webp"
+      "image": "/images/rosita.webp"
     },
     {
       "id": 22,
       "name": "Bob Stookey",
       "status": "deceased",
       "firstAppeared": 4,
-      "image": "/public/images/bob.webp"
+      "image": "/images/bob.webp"
     },
     {
       "id": 23,
       "name": "Tara Chambler",
       "status": "deceased",
       "firstAppeared": 4,
-      "image": "/public/images/tara.webp"
+      "image": "/images/tara.webp"
     },
     {
       "id": 24,
       "name": "Gareth",
       "status": "deceased",
       "firstAppeared": 4,
-      "image": "/public/images/gareth.webp"
+      "image": "/images/gareth.webp"
     },
     {
       "id": 25,
       "name": "Gabriel Stokes",
       "status": "deceased",
       "firstAppeared": 5,
-      "image": "/public/images/gabriel.webp"
+      "image": "/images/gabriel.webp"
     },
     {
       "id": 26,
       "name": "Deanna Monroe",
       "status": "deceased",
       "firstAppeared": 5,
-      "image": "/public/images/deanna.webp"
+      "image": "/images/deanna.webp"
     },
     {
       "id": 27,
       "name": "Aaron",
       "status": "alive",
       "firstAppeared": 5,
-      "image": "/public/images/aaron.webp"
+      "image": "/images/aaron.webp"
     },
     {
       "id": 28,
       "name": "Noah",
       "status": "deceased",
       "firstAppeared": 5,
-      "image": "/public/images/noah.webp"
+      "image": "/images/noah.webp"
     },
     {
       "id": 29,
       "name": "Negan Smith",
       "status": "alive",
       "firstAppeared": 6,
-      "image": "/public/images/negan.webp"
+      "image": "/images/negan.webp"
     },
     {
       "id": 30,
       "name": "Enid",
       "status": "deceased",
       "firstAppeared": 6,
-      "image": "/public/images/enid.webp"
+      "image": "/images/enid.webp"
     },
     {
       "id": 31,
       "name": "Jesus",
       "status": "deceased",
       "firstAppeared": 6,
-      "image": "/public/images/jesus.webp"
+      "image": "/images/jesus.webp"
     },
     {
       "id": 32,
       "name": "Dwight",
       "status": "alive",
       "firstAppeared": 6,
-      "image": "/public/images/dwight.webp"
+      "image": "/images/dwight.webp"
     },
     {
       "id": 33,
       "name": "Simon",
       "status": "deceased",
       "firstAppeared": 6,
-      "image": "/public/images/simon.twd.webp"
+      "image": "/images/simon.twd.webp"
     },
     {
       "id": 34,
       "name": "Jessie Anderson",
       "status": "deceased",
       "firstAppeared": 6,
-      "image": "/public/images/jessie.webp"
+      "image": "/images/jessie.webp"
     },
     {
       "id": 35,
       "name": "Gregory",
       "status": "deceased",
       "firstAppeared": 6,
-      "image": "/public/images/gregory.webp"
+      "image": "/images/gregory.webp"
     },
     {
       "id": 36,
       "name": "Jadis",
       "status": "alive",
       "firstAppeared": 7,
-      "image": "/public/images/jadis.webp"
+      "image": "/images/jadis.webp"
     },
     {
       "id": 37,
       "name": "Ezekiel",
       "status": "alive",
       "firstAppeared": 7,
-      "image": "/public/images/ezekiel.webp"
+      "image": "/images/ezekiel.webp"
     },
     {
       "id": 38,
       "name": "Siddiq",
       "status": "deceased",
       "firstAppeared": 8,
-      "image": "/public/images/siddiq.webp"
+      "image": "/images/siddiq.webp"
     },
     {
       "id": 39,
       "name": "Alpha",
       "status": "deceased",
       "firstAppeared": 9,
-      "image": "/public/images/alpha.webp"
+      "image": "/images/alpha.webp"
     },
     {
       "id": 40,
       "name": "Beta",
       "status": "deceased",
       "firstAppeared": 9,
-      "image": "/public/images/beta.webp"
+      "image": "/images/beta.webp"
     },
     {
       "id": 41,
       "name": "Lydia",
       "status": "alive",
       "firstAppeared": 9,
-      "image": "/public/images/lydia.webp"
+      "image": "/images/lydia.webp"
     },
     {
       "id": 42,
       "name": "Yumiko",
       "status": "alive",
       "firstAppeared": 9,
-      "image": "/public/images/yumiko.webp"
+      "image": "/images/yumiko.webp"
     },
     {
       "id": 43,
       "name": "Magna",
       "status": "alive",
       "firstAppeared": 9,
-      "image": "/public/images/magna.webp"
+      "image": "/images/magna.webp"
     },
     {
       "id": 44,
       "name": "Connie",
       "status": "alive",
       "firstAppeared": 9,
-      "image": "/public/images/connie.webp"
+      "image": "/images/connie.webp"
     },
     {
       "id": 45,
       "name": "Kelly",
       "status": "alive",
       "firstAppeared": 9,
-      "image": "/public/images/kelly.webp"
+      "image": "/images/kelly.webp"
     },
     {
       "id": 46,
       "name": "Princess",
       "status": "alive",
       "firstAppeared": 10,
-      "image": "/public/images/princess.webp"
+      "image": "/images/princess.webp"
     },
     {
       "id": 47,
       "name": "Leah",
       "status": "alive",
       "firstAppeared": 10,
-      "image": "/public/images/leah.webp"
+      "image": "/images/leah.webp"
     },
     {
       "id": 48,
       "name": "Pope",
       "status": "deceased",
       "firstAppeared": 11,
-      "image": "/public/images/pope.webp"
+      "image": "/images/pope.webp"
     },
     {
       "id": 49,
       "name": "Mercer",
       "status": "alive",
       "firstAppeared": 11,
-      "image": "/public/images/mercer.webp"
+      "image": "/images/mercer.webp"
     }
   ],
 
