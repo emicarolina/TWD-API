@@ -3,15 +3,18 @@ import cors from "cors";
 import compression from "compression";
 import rateLimit from "express-rate-limit";
 import path from "path";
-import charactersRoutes from "./routes/characters.js";
-import episodesRoutes from "./routes/episodes.js";
+import { fileURLToPath } from "url";
+
+import charactersRoutes from "../routes/characters.js";
+import episodesRoutes from "../routes/episodes.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
 app.use(compression());
-
 app.use(cors());
-
 app.use(express.json());
 
 const limiter = rateLimit({
@@ -20,12 +23,12 @@ const limiter = rateLimit({
   message: { error: "Too many requests, please try again later." },
 });
 
-app.use("/characters", limiter);
-app.use("/episodes", limiter);
+app.use("/api/characters", limiter);
+app.use("/api/episodes", limiter);
 
 app.use(
   "/public",
-  express.static(path.join(process.cwd(), "public"), {
+  express.static(path.join(__dirname, "../public"), {
     maxAge: "7d",
     etag: true,
     lastModified: true,
@@ -37,24 +40,22 @@ app.use(
   })
 );
 
-app.get("/health", (req, res) =>
+app.get("/api/health", (req, res) =>
   res.json({
     status: "ok",
     timestamp: new Date().toISOString(),
-    uptime: process.uptime(),
   })
 );
 
-app.get("/ping", (req, res) => {
-  res.json({ message: "API is awake!", uptime: Math.floor(process.uptime()) });
+app.get("/api/ping", (req, res) => {
+  res.json({ message: "API is awake!" });
 });
 
-app.use("/characters", charactersRoutes);
-app.use("/episodes", episodesRoutes);
+app.use("/api/characters", charactersRoutes);
+app.use("/api/episodes", episodesRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ error: "Endpoint not found" });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚀 API-TWD rodando na porta ${PORT}`));
+export default app;

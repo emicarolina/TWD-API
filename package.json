@@ -1,17 +1,22 @@
 {
   "name": "api-twd",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "The Walking Dead public API with characters and episodes",
+  "main": "api/index.js",
   "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "vercel-build": "echo 'Building for Vercel...'"
+  },
+  "keywords": [
+    "the-walking-dead",
+    "api",
+    "twd",
+    "rest-api"
+  ],
+  "author": "emicarolina",
+  "license": "MIT",
   "dependencies": {
     "compression": "^1.8.1",
     "cors": "^2.8.5",
@@ -20,5 +25,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }

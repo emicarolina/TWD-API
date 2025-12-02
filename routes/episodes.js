@@ -14,7 +14,9 @@ router.get("/", (req, res) => {
   const { season } = req.query;
   let { episodes } = readData();
 
-  if (season) episodes = episodes.filter((e) => e.season === Number(season));
+  if (season) {
+    episodes = episodes.filter((e) => e.season === Number(season));
+  }
 
   res.json(episodes);
 });
