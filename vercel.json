@@ -2,7 +2,7 @@
   "version": 2,
   "routes": [
     {
-      "src": "/images/(.*)",
+      "src": "/images/(.*\\.webp)$",
       "dest": "/api/images.js?name=$1"
     },
     {

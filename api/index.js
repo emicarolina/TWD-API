@@ -23,8 +23,8 @@ const limiter = rateLimit({
   message: { error: "Too many requests, please try again later." },
 });
 
-app.use("/api/characters", limiter);
-app.use("/api/episodes", limiter);
+app.use("/api/characters", limiter, charactersRoutes);
+app.use("/api/episodes", limiter, episodesRoutes);
 
 app.use(
   "/public",
@@ -33,7 +33,7 @@ app.use(
     etag: true,
     lastModified: true,
     setHeaders: (res, filePath) => {
-      if (filePath.match(/\.(webp|jpg|png|jpeg|gif|svg)$/i)) {
+      if (filePath.match(/\.webp$/i)) {
         res.setHeader("Cache-Control", "public, max-age=604800, immutable");
       }
     },
@@ -50,9 +50,6 @@ app.get("/api/health", (req, res) =>
 app.get("/api/ping", (req, res) => {
   res.json({ message: "API is awake!" });
 });
-
-app.use("/api/characters", charactersRoutes);
-app.use("/api/episodes", episodesRoutes);
 
 app.get("/", (req, res) => {
   res.json({
