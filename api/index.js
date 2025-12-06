@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import compression from "compression";
 import rateLimit from "express-rate-limit";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -13,7 +12,6 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-app.use(compression());
 app.use(cors());
 app.use(express.json());
 
@@ -25,20 +23,6 @@ const limiter = rateLimit({
 
 app.use("/api/characters", limiter, charactersRoutes);
 app.use("/api/episodes", limiter, episodesRoutes);
-
-app.use(
-  "/public",
-  express.static(path.join(__dirname, "../public"), {
-    maxAge: "7d",
-    etag: true,
-    lastModified: true,
-    setHeaders: (res, filePath) => {
-      if (filePath.match(/\.webp$/i)) {
-        res.setHeader("Cache-Control", "public, max-age=604800, immutable");
-      }
-    },
-  })
-);
 
 app.get("/api/health", (req, res) =>
   res.json({
