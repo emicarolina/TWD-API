@@ -1,14 +1,9 @@
 import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
-import path from "path";
-import { fileURLToPath } from "url";
 
 import charactersRoutes from "../routes/characters.js";
 import episodesRoutes from "../routes/episodes.js";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 
