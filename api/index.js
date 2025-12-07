@@ -44,9 +44,22 @@ app.get("/", (req, res) => {
     documentation: "https://github.com/emicarolina/api-twd",
     examples: {
       all_characters: "/api/characters?page=1&limit=12",
-      search_by_name: "/api/characters?name=Rick",
+      search_by_name: "/api/characters?name=rick",
       filter_by_status: "/api/characters?status=alive",
       episodes_by_season: "/api/episodes?season=1",
+    },
+  });
+});
+
+app.get("/api", (req, res) => {
+  res.json({
+    message: "👋 You've reached the API base path!",
+    tip: "Try one of the endpoints below:",
+    endpoints: {
+      characters: "/api/characters",
+      episodes: "/api/episodes",
+      health: "/api/health",
+      ping: "/api/ping",
     },
   });
 });
