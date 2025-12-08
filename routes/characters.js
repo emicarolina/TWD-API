@@ -6,54 +6,113 @@ const router = Router();
 
 const dataPath = path.join(process.cwd(), "data.json");
 
+let dataCache = null;
+let lastModified = null;
+
 function readData() {
-  return JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+  try {
+    const stats = fs.statSync(dataPath);
+    const currentModified = stats.mtime.getTime();
+
+    if (dataCache && lastModified === currentModified) {
+      return dataCache;
+    }
+
+    dataCache = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+    lastModified = currentModified;
+    return dataCache;
+  } catch (error) {
+    throw new Error("Failed to read data file");
+  }
 }
 
 router.get("/", (req, res) => {
-  const { name, status, page = "1", limit = "12" } = req.query;
-  const { characters } = readData();
+  try {
+    const { name, status, page = "1", limit = "12" } = req.query;
+    const { characters } = readData();
 
-  const pageNum = Math.max(1, Number.parseInt(page, 10) || 1);
-  const limitNum = Math.max(1, Math.min(100, Number.parseInt(limit, 10) || 12));
-
-  let result = characters;
-
-  if (name) {
-    result = result.filter((c) =>
-      c.name.toLowerCase().includes(String(name).toLowerCase())
+    const pageNum = Math.max(1, Number.parseInt(page, 10) || 1);
+    const limitNum = Math.max(
+      1,
+      Math.min(100, Number.parseInt(limit, 10) || 12)
     );
+
+    let result = characters;
+
+    if (name) {
+      const searchTerm = String(name).toLowerCase().trim();
+      result = result.filter((c) => c.name.toLowerCase().includes(searchTerm));
+    }
+
+    if (status) {
+      const validStatuses = ["alive", "deceased"];
+      const searchStatus = String(status).toLowerCase().trim();
+
+      if (validStatuses.includes(searchStatus)) {
+        result = result.filter(
+          (c) => c.status && c.status.toLowerCase() === searchStatus
+        );
+      }
+    }
+
+    const totalItems = result.length;
+    const totalPages = Math.max(1, Math.ceil(totalItems / limitNum));
+    const currentPage = Math.min(pageNum, totalPages);
+    const start = (currentPage - 1) * limitNum;
+    const end = start + limitNum;
+    const pageItems = result.slice(start, end);
+
+    res.json({
+      info: {
+        items: totalItems,
+        pages: totalPages,
+        next:
+          currentPage < totalPages
+            ? `/api/characters?page=${currentPage + 1}&limit=${limitNum}`
+            : null,
+        prev:
+          currentPage > 1
+            ? `/api/characters?page=${currentPage - 1}&limit=${limitNum}`
+            : null,
+      },
+      results: pageItems,
+    });
+  } catch (error) {
+    res.status(500).json({
+      error: "Internal server error",
+      message: "Failed to fetch characters",
+    });
   }
-
-  if (status) {
-    result = result.filter(
-      (c) => c.status && c.status.toLowerCase() === String(status).toLowerCase()
-    );
-  }
-
-  const totalItems = result.length;
-  const totalPages = Math.max(1, Math.ceil(totalItems / limitNum));
-  const currentPage = Math.min(pageNum, totalPages);
-  const start = (currentPage - 1) * limitNum;
-  const end = start + limitNum;
-  const pageItems = result.slice(start, end);
-
-  res.json({
-    page: currentPage,
-    totalPages,
-    totalItems,
-    limit: limitNum,
-    characters: pageItems,
-  });
 });
 
 router.get("/:id", (req, res) => {
-  const { characters } = readData();
-  const char = characters.find((c) => c.id === Number(req.params.id));
+  try {
+    const { characters } = readData();
+    const id = Number(req.params.id);
 
-  if (!char) return res.status(404).json({ error: "Character not found" });
+    if (isNaN(id) || id < 1) {
+      return res.status(400).json({
+        error: "Invalid ID",
+        message: "Character ID must be a positive number",
+      });
+    }
 
-  res.json(char);
+    const char = characters.find((c) => c.id === id);
+
+    if (!char) {
+      return res.status(404).json({
+        error: "Character not found",
+        message: `No character found with ID ${id}`,
+      });
+    }
+
+    res.json(char);
+  } catch (error) {
+    res.status(500).json({
+      error: "Internal server error",
+      message: "Failed to fetch character",
+    });
+  }
 });
 
 export default router;
