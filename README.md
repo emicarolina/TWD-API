@@ -7,7 +7,6 @@
 > Esta API é somente leitura.
 > Não há suporte para criação, edição ou exclusão de dados.
 
-
 ## 📌 Base URL
 
 https://api-twd.vercel.app/api
@@ -44,7 +43,6 @@ https://api-twd.vercel.app/api
 }
 ```
 ### Exemplos de uso:
-
 ### Todos os personagens
 - GET `/api/characters?limit=100`
 
@@ -351,14 +349,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 - [ ] Adicionar mais personagens
 - [ ] Incluir informações de personagens
 - [ ] Adicionar citações memoráveis
-- [ ] Endpoint de busca global
-- [ ] Informações sobre locações
 - [ ] Relacionamentos entre personagens
-
-# 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
 
 # Fim :)
 ### Feito com ❤️ por Emilly. Desenvolvido em 2025.
