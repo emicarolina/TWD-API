@@ -1,28 +1,27 @@
 # 🧟 The Walking Dead API
 
-- Uma API REST pública e gratuita com informações sobre personagens e episódios da série The Walking Dead (2010–2022).
-
-- Sem necessidade de autenticação, totalmente aberta e pronta para uso em projetos, estudos ou integrações.
+- A **public and free REST API** with information about characters and episodes from *The Walking Dead* TV series (2010–2022).
+- No authentication required — fully open and ready to be used in projects, studies, or integrations.
   
-> Esta API é somente leitura.
-> Não há suporte para criação, edição ou exclusão de dados.
+> This API is **read-only**.  
+> There is no support for creating, updating, or deleting data.
 
-## 📌 Base URL
+## Base URL
 
 https://api-twd.vercel.app/api
 
-## ⚡ Endpoints
+## Endpoints
 
-### 👥 Personagens
+### Characters
 
-| Parâmetro |  Tipo  | Descrição                                |
-| --------- | ------ | -----------------------------------------
-| page      | number | Página atual (padrão: 1)                 |
-| limit     | number | Itens por página (padrão: 12, max: 100)  |
-| name      | string | Filtrar por nome (case-insensitive)      |
-| status    | string | Filtrar por status (alive ou deceased)   |
+| Parameter |  Type  | Description                            |
+| --------- | ------ | ---------------------------------------
+| page      | number | Current page (default: 1)              |
+| limit     | number | Items per page (default: 12, max: 100) |
+| name      | string | Filter by name (case-insensitive)      |
+| status    | string | Filter by status (alive or deceased))  |
 
-### Exemplo de resposta:
+### Example response:
 ```
 {
   "info": {
@@ -42,29 +41,29 @@ https://api-twd.vercel.app/api
   ]
 }
 ```
-### Exemplos de uso:
-### Todos os personagens
+## Usage examples:
+### All characters
 - GET `/api/characters?limit=100`
 
-### Personagens da primeira página
+### First page characters
 - GET `/api/characters`
 
-### Página específica
+### Specific page
 - GET `/api/characters?page=2`
 
-### Buscar por nome
+### Search by name
 - GET `/api/characters?name=rick`
 
-### Filtrar por status
+### Filter by status
 - GET `/api/characters?status=alive`
 
-### Combinar filtros
+### Combine filters
 - GET `/api/characters?status=deceased&limit=20`
 
-### Buscar personagem por ID
+### Get character by ID
 - GET `/api/characters/1`
 
-### Exemplo de resposta:
+### Example response:
 ```
 {
   "id": 1,
@@ -74,18 +73,18 @@ https://api-twd.vercel.app/api
   "image": "/images/rick.webp"
 }
 ```
-# 📺 Episódios
+# Episodes
 
-| Parâmetro |  Tipo  | Descrição                    |
-| --------- | ------ | -----------------------------
-| season    | number | Filtrar por temporada (1-11) |
+| Parameter |  Type  | Description             |
+| --------- | ------ | ------------------------
+| season    | number | Filter by season (1–11) |
 
-### Todos os episódios
+### All episodes
 - GET `/api/episodes`
 
-**Retorna:** Array com todos os 177 episódios da série.
+**Returns:** An array with all 177 episodes from the series.
 
-### Exemplo de resposta:
+### Example response:
 ```
 [
   {
@@ -104,13 +103,13 @@ https://api-twd.vercel.app/api
   }
 ]
 ```
-### Episódios por temporada
+### Episodes by season
 GET `/api/episodes?season=1`
 
-### Buscar episódio por ID 
+### Get episode by ID
 GET `/api/episodes/1`
 
-### Exemplo de resposta:
+### Example response:
 ```
 {
   "id": 1,
@@ -120,26 +119,23 @@ GET `/api/episodes/1`
   "summary": "Rick acorda em um hospital e descobre que o mundo foi devastado por mortos-vivos."
 }
 ```
-# 🖼️ Imagens
-
+# Images
 #### **GET** `/images/:filename.webp`
-Retorna a imagem do personagem em formato **_.webp_**, por exemplo:
+Returns the character image in **_.webp_**, for example:
 
 https://api-twd.vercel.app/images/rick.webp
 
-### Notas:
-
-- Apenas arquivos .webp são permitidos
-- Cache habilitado (7 dias)
-- Retorna 404 se a imagem não existir
+### Notes:
+- Only **_.webp_** files are supported
+- Cache enabled (7 days)
+- Returns 404 if the image does not exist
 
 # 💓 Health Check
-
-Verifica se a API está online.
+Checks whether the API is online.
 
 GET `/api/health`
 
-### Exemplo de resposta:
+### Example response:
 ```
 {
   "status": "ok",
@@ -147,36 +143,35 @@ GET `/api/health`
 }
 ```
 # 🏓 Ping
-
-Endpoint simples para testar conectividade.
+Simple endpoint to test connectivity.
 
 GET `/api/ping`
 
-### Exemplo de resposta:
+### Example response:
 ```
 {
   "message": "API is awake!"
 }
 ```
-# 💡 Exemplos de Uso
+# Usage Examples
 
 1) JavaScript (Fetch API)
 ```
-// Buscar todos os personagens vivos
+// Fetch all alive characters
 async function getAliveCharacters() {
   const response = await fetch('https://api-twd.vercel.app/api/characters?status=alive');
   const data = await response.json();
   console.log(data.results);
 }
 
-// Buscar personagem específico
+// Fetch a specific character
 async function getCharacter(id) {
   const response = await fetch(`https://api-twd.vercel.app/api/characters/${id}`);
   const character = await response.json();
   console.log(character);
 }
 
-// Buscar episódios de uma temporada específica
+// Fetch episodes from a specific season
 async function getSeasonEpisodes(season) {
   const response = await fetch(`https://api-twd.vercel.app/api/episodes?season=${season}`);
   const episodes = await response.json();
@@ -188,17 +183,17 @@ async function getSeasonEpisodes(season) {
 ```
 import requests
 
-# Buscar personagens
+# Fetch characters
 response = requests.get('https://api-twd.vercel.app/api/characters')
 data = response.json()
 print(data['results'])
 
-# Buscar por nome
+# Search by name
 response = requests.get('https://api-twd.vercel.app/api/characters?name=Daryl')
 data = response.json()
 print(data['results'])
 
-# Buscar episódios
+# Fetch episodes
 response = requests.get('https://api-twd.vercel.app/api/episodes?season=1')
 episodes = response.json()
 for episode in episodes:
@@ -238,119 +233,107 @@ function CharacterList() {
 }
 ```
 
-# 🌐 CORS
+# CORS
+CORS is enabled, allowing requests from any origin.
 
-A API possui CORS habilitado, permitindo requisições de qualquer origem.
-
-# ⚡ Rate Limiting
-
-A API possui limitação de taxa para garantir disponibilidade:
-
-- Limite: 1000 requisições por 10 minutos por IP
+# Rate Limiting
+Rate limiting is enabled to ensure API availability:
+- Limit: 1000 requests per 10 minutes per IP
   
-### Headers de resposta:
+### Response headers:
+- X-RateLimit-Limit: Total request limit
+- X-RateLimit-Remaining: Remaining requests
+- X-RateLimit-Reset: Reset timestamp
 
-- X-RateLimit-Limit: Limite total
-- X-RateLimit-Remaining: Requisições restantes
-- X-RateLimit-Reset: Timestamp de reset
+# Status Codes
+| Code   |  Description                     |
+| ------ | ---------------------------------
+| 200    | Success                          |
+| 400    | Bad request (invalid parameters) |
+| 404    | Resource not found               |
+| 429    | Rate limit exceeded              |
+| 500    | Internal server error            |
 
-# 📋 Códigos de Status
-| Código |  Descrição                                  |
-| ------ | -------------------------------------------
-| 200    | Sucesso                                     |
-| 400    | Requisição inválida (parâmetros incorretos) |
-| 404    | Recurso não encontrado                      |
-| 429    | Rate limit excedido                         |
-| 500    | Erro interno do servidor                    |
-
-# 📦 Estrutura de Erros
-Todos os erros retornam um objeto JSON no seguinte formato:
+# Error Structure
+All errors return a JSON object in the following format:
 ```
 {
-  "error": "Tipo do erro",
-  "message": "Descrição detalhada do erro"
+  "error": "Error type",
+  "message": "Detailed error description"
 }
 ```
-# 🛠️ Tecnologias
+# Technologies
+- Node.js
+- Express
+- Express Rate Limit
+- CORS
+- Vercel (deployment)
 
-- Node.js - Runtime JavaScript
-- Express - Framework web
-- Express Rate Limit - Controle de taxa
-- CORS - Habilitação de requisições cross-origin
-- Vercel - Hospedagem e deploy
-
-# 📊 Dados Disponíveis
-
-### Estatísticas
-
-- 49 personagens principais
-- 177 episódios (Temporadas 1-11)
-- Imagens em formato WebP otimizado
+# Available Data
+### Statistics
+- 49 main characters
+- 177 episodes (Seasons 1–11)
+- Optimized WebP images
   
-### Status dos Personagens
+### Character Status
+- alive - Alive character
+- deceased - Deceased character
 
-- alive - Personagem vivo
-- deceased - Personagem morto
-
-# 🔧 Executar Localmente
-
-Pré-requisitos:
-
+# Running Locally
+Requirements:
 - Node.js >= 18.x
 - npm ou yarn
 
-Instalação:
+Installation:
 ```
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/emicarolina/api-twd.git
 
-# Entre na pasta
+# Enter the project folder
 cd api-twd
 
-# Instale as dependências
+# Install dependencies
 npm install
 
-# Execute em modo desenvolvimento
+# Run in development mode
 npm run dev
 
-# Ou em produção
+# Or run in production
 npm start
 ```
-A API estará disponível em **http://localhost:3000**
+The API will be available at **http://localhost:3000**
 
-# 📝 Estrutura do Projeto
+# Project Structure
 ```
 api-twd/
 ├── api/
-│   ├── index.js          # Servidor Express principal
-│   └── images.js         # Handler de imagens
+│   ├── index.js          # Main Express server
+│   └── images.js         # Image handler
 ├── routes/
-│   ├── characters.js     # Rotas de personagens
-│   └── episodes.js       # Rotas de episódios
+│   ├── characters.js     # Character routes
+│   └── episodes.js       # Episode routes
 ├── public/
-│   └── images/          # Imagens dos personagens
-├── data.json            # Banco de dados JSON
+│   └── images/          # Character images
+├── data.json            # JSON database
 ├── package.json
-├── vercel.json          # Configuração Vercel
+├── vercel.json          # Vercel configuration
 └── README.md
 ```
 
-# 🤝 Contribuindo
+# Contributing
+Contributions are welcome! Feel free to:
 
-Contribuições são bem-vindas! Sinta-se à vontade para:
+1) Fork the project
+2) Create a feature branch (git checkout -b feature/NewFeature)
+3) Commit your changes (git commit -m 'Add: new feature')
+4) Push to the branch (git push origin feature/NewFeature)
+5) Open a Pull Request
 
-1) Fazer fork do projeto
-2) Criar uma branch para sua feature (git checkout -b feature/NovaFeature)
-3) Commit suas mudanças (git commit -m 'Add: Nova feature')
-4) Push para a branch (git push origin feature/NovaFeature)
-5) Abrir um Pull Request
+### Contribution ideas
+- [ ] Add more characters
+- [ ] Include additional character details
+- [ ] Add memorable quotes
+- [ ] Character relationships
 
-### Ideias de contribuição
-- [ ] Adicionar mais personagens
-- [ ] Incluir informações de personagens
-- [ ] Adicionar citações memoráveis
-- [ ] Relacionamentos entre personagens
-
-# Fim :)
-### Feito com ❤️ por Emilly. Desenvolvido em 2025.
+## Made with ❤️ by Emilly. Developed in 2025.
 
